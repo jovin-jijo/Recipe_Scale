@@ -1,0 +1,49 @@
+:root {
+    --background: #000000;
+    --surface: #0A0A0C;
+    --surface-light: #111113;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.14);
+    --text: #F5F5F7;
+    --text-secondary: #A1A1AA;
+    --text-muted: #6E6E73;
+    --accent: #00E96B;
+    --error: #FF453A;
+    --warning: #FF9F0A;
+    --font-main: "Neue Haas Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --font-display: "Serif Corporate Medium", Georgia, serif;
+    --font-italic: "Serif Corporate Medium Italic", Georgia, serif;
+    --font-label: "Franklin Gothic", Arial, sans-serif;
+    --title-size: 52px;
+    --heading-size: 30px;
+    --recipe-size: 28px;
+    --number-size: 48px;
+    --body-size: 16px;
+    --nav-size: 14px;
+    --label-size: 12px;
+    --radius-small: 14px;
+    --radius-card: 20px;
+    --radius-large: 24px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --transition: 200ms cubic-bezier(.2,.8,.2,1);
+    --max-width: 1200px;
+    --nav-height: 72px;
+}
+
+[data-theme="light"] {
+    --background: #F5F5F7;
+    --surface: #FFFFFF;
+    --surface-light: #F0F0F2;
+    --border: rgba(0,0,0,0.1);
+    --border-hover: rgba(0,0,0,0.2);
+    --text: #111111;
+    --text-secondary: #555555;
+    --text-muted: #777777;
+}

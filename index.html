@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Scale</title>
+    <meta name="description" content="A minimalist recipe scaling and unit conversion tool.">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="nav">
+        <nav class="nav-inner">
+            <a href="#" class="logo">Recipe Scale</a>
+
+            <div class="nav-links">
+                <a href="#scale">Scale</a>
+                <a href="#convert">Convert</a>
+                <a href="#pan">Pan</a>
+            </div>
+
+            <button class="theme-button" aria-label="Change theme">◐</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="scale">
+            <div class="section-title">
+                <span>Recipe Scaling</span>
+                <h1>Scale recipes precisely.</h1>
+                <p>Adjust ingredients instantly with accurate measurements.</p>
+            </div>
+
+            <div class="recipe-area"></div>
+        </section>
+
+        <section id="convert">
+            <div class="section-title">
+                <span>Conversion</span>
+                <h2>Convert kitchen units.</h2>
+            </div>
+
+            <div class="converter-area"></div>
+        </section>
+
+        <section id="pan">
+            <div class="section-title">
+                <span>Baking Tools</span>
+                <h2>Compare baking pans.</h2>
+            </div>
+
+            <div class="pan-area"></div>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

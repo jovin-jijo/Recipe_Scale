@@ -1,0 +1,78 @@
+@media (max-width: 800px) {
+
+    :root {
+        --title-size: 40px;
+        --heading-size: 26px;
+        --number-size: 36px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .nav-inner {
+        padding: 0 var(--space-4);
+    }
+
+
+    section {
+        padding:
+            var(--space-7)
+            var(--space-4);
+    }
+
+
+    .recipe-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .converter {
+        grid-template-columns: 1fr;
+    }
+
+
+    .arrow {
+        transform: rotate(90deg);
+
+        text-align: center;
+    }
+
+
+    .pan-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    .section-title h1 {
+        font-size: 36px;
+    }
+
+
+    .card,
+    .recipe-area,
+    .converter-area,
+    .pan-area {
+        padding: var(--space-4);
+    }
+
+
+    .ingredient {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: var(--space-2);
+    }
+
+}
