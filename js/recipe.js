@@ -57,12 +57,3 @@ export function addStep(recipe) {
     });
     saveRecipe(recipe);
 }
-
-// ✨ Fixed State Handlers for Page Refreshes
-export function saveViewMode(mode) {
-    saveData("recipe-view-mode", mode);
-}
-
-export function loadViewMode() {
-    return getData("recipe-view-mode") || "view"; // Defaults to view mode if empty
-}
