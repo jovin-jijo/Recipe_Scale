@@ -8,7 +8,7 @@ import { createBuilder } from "./builder.js";
 import { loadRecipe, saveRecipe } from "./recipe.js";
 
 let currentRecipe = loadRecipe();
-let currentMode = "edit";
+let currentMode = "view";
 
 function startApp() {
     const scaleArea = select(".recipe-area");
