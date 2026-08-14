@@ -103,28 +103,16 @@ function getPanArea(type) {
     return 64;
 }
 
-function checkTab() {
-    let hash = window.location.hash;
-    if (hash === "") {
-        hash = "#scale";
-    }
-
+function initPage() {
     let scaleSec = document.getElementById("scale");
     let convertSec = document.getElementById("convert");
     let panSec = document.getElementById("pan");
 
-    if (scaleSec) scaleSec.style.display = "none";
-    if (convertSec) convertSec.style.display = "none";
-    if (panSec) panSec.style.display = "none";
+    if (scaleSec) scaleSec.style.display = "block";
+    if (convertSec) convertSec.style.display = "block";
+    if (panSec) panSec.style.display = "block";
 
-    if (hash === "#scale" && scaleSec) {
-        scaleSec.style.display = "block";
-    } else if (hash === "#convert" && convertSec) {
-        convertSec.style.display = "block";
-    } else if (hash === "#pan" && panSec) {
-        panSec.style.display = "block";
-        calculatePanAreas();
-    }
+    calculatePanAreas();
 }
 
 let pan1Select = document.getElementById("pan-1-type");
@@ -133,5 +121,4 @@ let pan2Select = document.getElementById("pan-2-type");
 if (pan1Select) pan1Select.addEventListener("change", calculatePanAreas);
 if (pan2Select) pan2Select.addEventListener("change", calculatePanAreas);
 
-window.addEventListener("DOMContentLoaded", checkTab);
-window.addEventListener("hashchange", checkTab);
+window.addEventListener("DOMContentLoaded", initPage);
