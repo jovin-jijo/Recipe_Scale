@@ -96,3 +96,60 @@
 
                     <div class="input-group">
                         <label class="input-label">To</label>
+                        <div id="convert-result" class="converter-value">200</div>
+                        <select id="convert-to" class="input">
+                            <option value="g">Grams</option>
+                            <option value="cup">Cups</option>
+                            <option value="tbsp">Tablespoons</option>
+                            <option value="tsp">Teaspoons</option>
+                            <option value="oz">Ounces</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pan">
+            <div class="section-title">
+                <span>Baking Tools</span>
+                <h2>Compare baking pans.</h2>
+            </div>
+
+            <div class="pan-area">
+                <div class="pan-grid">
+                    <div class="stat">
+                        <label class="input-label">Original Pan</label>
+                        <select id="pan-1-type" class="input">
+                            <option value="8-round">8" Round</option>
+                            <option value="9-round" selected>9" Round</option>
+                            <option value="8-square">8" Square</option>
+                            <option value="9-square">9" Square</option>
+                            <option value="9x13-rect">9x13" Rectangular</option>
+                        </select>
+                        <div id="pan-1-area" class="stat-value">63.6 sq in</div>
+                    </div>
+
+                    <div class="stat">
+                        <label class="input-label">Target Pan</label>
+                        <select id="pan-2-type" class="input">
+                            <option value="8-round">8" Round</option>
+                            <option value="9-round">9" Round</option>
+                            <option value="8-square" selected>8" Square</option>
+                            <option value="9-square">9" Square</option>
+                            <option value="9x13-rect">9x13" Rectangular</option>
+                        </select>
+                        <div id="pan-2-area" class="stat-value">64.0 sq in</div>
+                    </div>
+                </div>
+
+                <div class="stat" style="margin-top: 16px;">
+                    <div id="pan-ratio" class="stat-value">Scale Factor: 1.01x</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/builder.js"></script>
+</body>
+</html>
