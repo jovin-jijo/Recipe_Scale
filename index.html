@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Scale</title>
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="A minimalist recipe scaling and unit conversion tool.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="nav">
         <nav class="nav-inner">
             <a href="#scale" class="logo">Recipe Scale</a>
+
             <div class="nav-links">
                 <a href="#scale">Scale</a>
                 <a href="#convert">Convert</a>
                 <a href="#pan">Pan</a>
             </div>
+
             <button class="theme-button" aria-label="Change theme">◐</button>
         </nav>
     </header>
@@ -31,45 +31,7 @@
                 <p>Adjust ingredients instantly with accurate measurements.</p>
             </div>
 
-            <div class="recipe-area">
-                <div class="card recipe-card">
-                    <div class="recipe-header">
-                        <div class="input-group">
-                            <label for="recipe-name" class="input-label">Recipe Name</label>
-                            <input type="text" id="recipe-name" class="input" placeholder="Enter recipe name...">
-                        </div>
-                        <div class="stepper">
-                            <button type="button" id="step-down">-</button>
-                            <input type="number" id="servings-input" value="1" min="1">
-                            <button type="button" id="step-up">+</button>
-                        </div>
-                    </div>
-
-                    <div id="ingredients-list" class="ingredients">
-                        <div class="ingredient">
-                            <span class="ingredient-name" contenteditable="true">flour</span>
-                            <div class="ingredient-value">
-                                <span class="amount" data-base-amount="2" contenteditable="true">2</span>
-                                <span class="unit" contenteditable="true">cups</span>
-                            </div>
-                        </div>
-                        <div class="ingredient">
-                            <span class="ingredient-name" contenteditable="true">baking powder</span>
-                            <div class="ingredient-value">
-                                <span class="amount" data-base-amount="1" data-sensitive="true" contenteditable="true">1</span>
-                                <span class="unit" contenteditable="true">tsp</span>
-                            </div>
-                        </div>
-                        <div class="ingredient">
-                            <span class="ingredient-name" contenteditable="true">butter</span>
-                            <div class="ingredient-value">
-                                <span class="amount" data-base-amount="1" contenteditable="true">1</span>
-                                <span class="unit" contenteditable="true">cup</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="recipe-area"></div>
         </section>
 
         <section id="convert">
@@ -78,35 +40,7 @@
                 <h2>Convert kitchen units.</h2>
             </div>
 
-            <div class="converter-area">
-                <div class="card converter">
-                    <div class="input-group">
-                        <label class="input-label">From</label>
-                        <input type="number" id="convert-amount" class="input" value="1" min="0">
-                        <select id="convert-from" class="input">
-                            <option value="cup">Cups</option>
-                            <option value="tbsp">Tablespoons</option>
-                            <option value="tsp">Teaspoons</option>
-                            <option value="g">Grams</option>
-                            <option value="oz">Ounces</option>
-                        </select>
-                    </div>
-
-                    <div class="arrow">→</div>
-
-                    <div class="input-group">
-                        <label class="input-label">To</label>
-                        <div id="convert-result" class="converter-value">200</div>
-                        <select id="convert-to" class="input">
-                            <option value="g">Grams</option>
-                            <option value="cup">Cups</option>
-                            <option value="tbsp">Tablespoons</option>
-                            <option value="tsp">Teaspoons</option>
-                            <option value="oz">Ounces</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            <div class="converter-area"></div>
         </section>
 
         <section id="pan">
@@ -115,41 +49,10 @@
                 <h2>Compare baking pans.</h2>
             </div>
 
-            <div class="pan-area">
-                <div class="pan-grid">
-                    <div class="stat">
-                        <label class="input-label">Original Pan</label>
-                        <select id="pan-1-type" class="input">
-                            <option value="8-round">8" Round</option>
-                            <option value="9-round" selected>9" Round</option>
-                            <option value="8-square">8" Square</option>
-                            <option value="9-square">9" Square</option>
-                            <option value="9x13-rect">9x13" Rectangular</option>
-                        </select>
-                        <div id="pan-1-area" class="stat-value">63.6 sq in</div>
-                    </div>
-
-                    <div class="stat">
-                        <label class="input-label">Target Pan</label>
-                        <select id="pan-2-type" class="input">
-                            <option value="8-round">8" Round</option>
-                            <option value="9-round">9" Round</option>
-                            <option value="8-square" selected>8" Square</option>
-                            <option value="9-square">9" Square</option>
-                            <option value="9x13-rect">9x13" Rectangular</option>
-                        </select>
-                        <div id="pan-2-area" class="stat-value">64.0 sq in</div>
-                    </div>
-                </div>
-
-                <div class="stat" style="margin-top: 16px;">
-                    <div id="pan-ratio" class="stat-value">Scale Factor: 1.01x</div>
-                </div>
-            </div>
+            <div class="pan-area"></div>
         </section>
     </main>
 
-    <script src="js/app.js"></script>
-    <script src="js/builder.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
