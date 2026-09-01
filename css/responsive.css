@@ -1,14 +1,14 @@
 @media (max-width: 600px) {
     nav {
-        flex-direction: column;
-        gap: 15px;
+        display: block;
     }
 
     nav ul {
-        gap: 12px;
+        margin-top: 15px;
+        gap: 15px;
     }
 
     main {
-        padding: 20px 15px;
+        padding: 25px 15px;
     }
 }
