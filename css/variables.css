@@ -1,42 +1,6 @@
 :root {
-    --background: #000;
-    --surface: #080808;
-    --surface-light: #111;
-    
-    --text: #fff;
-    --text-secondary: #aaa;
-    --text-muted: #666;
-
-    --border: #242424;
-    --border-hover: #555;
-
-    --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-display: Georgia, "Times New Roman", serif;
-    --font-label: "Courier New", monospace;
-
-    --title-size: 64px;
-    --heading-size: 34px;
-    --recipe-size: 30px;
-    --number-size: 52px;
-    --body-size: 16px;
-    --nav-size: 13px;
-    --label-size: 11px;
-
-    --space-1: 4px;
-    --space-2: 8px;
-    --space-3: 12px;
-    --space-4: 16px;
-    --space-5: 24px;
-    --space-6: 32px;
-    --space-7: 48px;
-    --space-8: 72px;
-
-    --radius-small: 0;
-    --radius-card: 0;
-    --radius-large: 0;
-
-    --max-width: 1100px;
-    --nav-height: 70px;
-
-    --transition: 180ms ease;
+    --black: #000;
+    --white: #fff;
+    --gray: #666;
+    --border: #ddd;
 }
