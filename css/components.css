@@ -1,7 +1,7 @@
 .card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: 0;
     padding: var(--space-6);
 }
 
@@ -16,28 +16,32 @@
     justify-content: space-between;
     align-items: center;
     gap: var(--space-4);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: var(--space-4);
 }
 
 .recipe-title {
     font-family: var(--font-display);
     font-size: var(--recipe-size);
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
+    font-weight: 400;
 }
 
 .recipe-info {
     display: flex;
     gap: var(--space-4);
-    color: var(--text-secondary);
-    font-size: 14px;
+    color: var(--text-muted);
+    font-family: var(--font-label);
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .stepper {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: 0;
     border: 1px solid var(--border);
-    border-radius: var(--radius-small);
-    padding: 4px;
+    background: var(--background);
 }
 
 .stepper button {
@@ -46,46 +50,54 @@
     border: none;
     background: transparent;
     color: var(--text);
-    font-size: 20px;
-    border-radius: 10px;
-    transition:
-        background var(--transition),
-        color var(--transition);
+    font-size: 18px;
+    border-radius: 0;
+    transition: all var(--transition);
 }
 
 .stepper button:hover {
-    background: var(--surface-light);
+    background: var(--text);
+    color: var(--background);
 }
 
 .stepper input {
-    width: 55px;
+    width: 50px;
     border: none;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
     background: transparent;
     color: var(--text);
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: var(--font-label);
 }
 
 .stepper input:focus {
     outline: none;
+    background: var(--surface-light);
 }
 
 .ingredients {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: 0;
 }
 
 .ingredient {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-3) 0;
+    padding: var(--space-4) 0;
     border-bottom: 1px solid var(--border);
+    transition: padding var(--transition);
+}
+
+.ingredient:hover {
+    padding-left: var(--space-2);
 }
 
 .ingredient:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid var(--border);
 }
 
 .ingredient-name {
@@ -94,33 +106,42 @@
 
 .ingredient-value {
     color: var(--text-secondary);
+    font-family: var(--font-label);
 }
 
 .ingredient.checked {
-    opacity: 0.3;
+    opacity: 0.2;
+    text-decoration: line-through;
 }
 
 .button {
     height: 44px;
     padding: 0 var(--space-5);
-    border-radius: var(--radius-small);
-    border: 1px solid var(--border);
+    border-radius: 0;
+    border: 1px solid var(--text);
     background: transparent;
     color: var(--text);
-    transition:
-        border-color var(--transition),
-        background var(--transition);
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    transition: all var(--transition);
 }
 
 .button:hover {
-    border-color: var(--border-hover);
-    background: var(--surface-light);
+    background: var(--text);
+    color: var(--background);
 }
 
 .button.primary {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #000000;
+    background: var(--text);
+    border-color: var(--text);
+    color: var(--background);
+}
+
+.button.primary:hover {
+    background: transparent;
+    color: var(--text);
 }
 
 .input-group {
@@ -134,21 +155,22 @@
     font-family: var(--font-label);
     font-size: var(--label-size);
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: 0.1em;
 }
 
 .input {
     height: 48px;
     padding: 0 var(--space-4);
-    background: var(--surface);
+    background: var(--background);
     border: 1px solid var(--border);
-    border-radius: var(--radius-small);
+    border-radius: 0;
     color: var(--text);
+    font-family: var(--font-label);
     transition: border-color var(--transition);
 }
 
 .input:focus {
-    border-color: var(--accent);
+    border-color: var(--text);
     outline: none;
 }
 
@@ -161,38 +183,46 @@
 
 .converter-value {
     font-size: var(--number-size);
+    font-family: var(--font-display);
     letter-spacing: -0.04em;
 }
 
 .converter-unit {
-    color: var(--text-secondary);
-    font-size: 14px;
+    color: var(--text-muted);
+    font-family: var(--font-label);
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .arrow {
-    color: var(--text-muted);
-    font-size: 22px;
+    color: var(--text-secondary);
+    font-size: 18px;
 }
 
 .pan-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-5);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
 }
 
 .stat {
-    padding: var(--space-4);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-small);
+    padding: var(--space-5);
+    background: var(--surface);
+    border-radius: 0;
 }
 
 .stat-value {
-    font-size: 28px;
-    letter-spacing: -0.03em;
+    font-size: 32px;
+    font-family: var(--font-display);
 }
 
 .stat-label {
     margin-top: var(--space-2);
     color: var(--text-muted);
-    font-size: 12px;
+    font-family: var(--font-label);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
