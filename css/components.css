@@ -2,8 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -20,27 +19,26 @@ button {
     padding: 10px 16px;
     background: #000;
     color: #fff;
-    border: 1px solid #000;
+    border: 0;
     cursor: pointer;
 }
 
 button:hover {
-    background: #fff;
-    color: #000;
+    background: #555;
 }
 
 input,
 select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 10px 0;
     background: #fff;
     color: #000;
+    border: 0;
+    border-bottom: 1px solid #000;
 }
 
 .card {
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 20px 0;
 }
 
 .card h2 {
@@ -48,5 +46,5 @@ select {
 }
 
 .card p {
-    color: #666;
+    color: #555;
 }
