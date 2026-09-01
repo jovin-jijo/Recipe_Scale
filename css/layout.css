@@ -21,8 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-/* subtle page grid */
-
 body::before {
     content: "";
     position: fixed;
@@ -71,11 +69,6 @@ h3,
 p {
     margin-top: 0;
 }
-
-
-/* =========================
-   NAVIGATION
-========================= */
 
 .nav {
     position: sticky;
@@ -184,11 +177,6 @@ p {
     color: #000;
 }
 
-
-/* =========================
-   MAIN
-========================= */
-
 main {
     width: 100%;
 }
@@ -202,11 +190,6 @@ section {
         var(--space-8)
         var(--space-5);
 }
-
-
-/* =========================
-   SECTION HEADERS
-========================= */
 
 .section-title {
     position: relative;
@@ -275,11 +258,6 @@ section {
     line-height: 1.7;
 }
 
-
-/* =========================
-   CONTENT AREAS
-========================= */
-
 .recipe-area,
 .converter-area,
 .pan-area {
@@ -294,8 +272,6 @@ section {
 
     background: var(--surface);
 }
-
-/* small corner detail */
 
 .recipe-area::before,
 .converter-area::before,
@@ -313,11 +289,6 @@ section {
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
 }
-
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 800px) {
 
